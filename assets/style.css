@@ -8,9 +8,8 @@ header {
     font-size: 20px;
 
 }
-
-img {
-    max-width: 30%;
-    height:fit-content
-
-}
+ .content {
+    width: 75%;
+    display: block;
+    margin: auto;
+ }
