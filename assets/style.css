@@ -9,19 +9,29 @@ body {
     background-color: white
 }
 .header {
-padding: 20px;
-background-color: blue;
-color: black;
+display: block;
+background-color: black;
+color: white;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
+
+/* p {
+  width: 300px;
+border: 15px black;
+padding: 20px;
+margin: 20px;
+flat  
+} */
+
 .header h1 {
+display: inline-block;
+padding: 20px;
 font-size: 30px;
 }
 
  /* wrap */
 .header nav {
-padding-bottom: 10%;
+padding-top: 20px;
 margin-right: 20px;
 float: right;
 font-size: 20px;
@@ -33,5 +43,46 @@ font-size: 20px;
 
 .header nav ul li {
     display: inline-block;
-    margin- left: 25px;
+    margin-left: 25px;
 }
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+
+figure img {
+   display: inline; 
+   width: 150px;
+    height: 200px;
+    /* float: inline-start; */
+    /* padding: 10px; */
+     margin-left: 55px;
+    margin-right: 10px; 
+     
+}
+
+figcaption {
+    display: inline-block;
+    position: top;
+    width: 200px;
+}
+
+img {
+    max-width: 200px;
+}
+.selfie {
+    display: block;
+    margin-left: auto;
+    margin-right: 500px;
+} 
+
+/* main image {
+    float: inline-start;
+}
+
+main p {
+    float: inline-end;
+} 
+Trying to get the bio to be next to the image. change the font, it looks weird. figure out how to make the image and text in a box.*/
