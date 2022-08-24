@@ -5,21 +5,19 @@
 body {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white
+    background-color: white;
 }
 .header {
 display: block;
-background-color: black;
-color: white;
+height: 100px;
+width: 100%;
+background-image: url(https://previews.123rf.com/images/mrnvb/mrnvb1809/mrnvb180900017/107361560-seamless-floral-border-with-beautiful-garden-flowers-hand-drawn-pattern-on-white-background-design-e.jpg?fj=1);
+background-size: cover;
+background-position: center;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
- /* p {
-  width: 300px;
-border: 15px black;
-padding: 20px;
-margin: 20px;
- } */
+.header:hover {box-shadow: 0px 0px 20px darkgreen;}
 
 .header h1 {
 display: inline-block;
@@ -27,7 +25,6 @@ padding: 20px;
 font-size: 30px;
 }
 
- /* wrap */
 .header nav {
 padding-top: 20px;
 margin-right: 20px;
@@ -45,7 +42,9 @@ font-size: 20px;
 }
 
 a {
-    color: black;
+    color: rgb(0, 0, 0);
+    font: bolder;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -68,6 +67,8 @@ main {
     border-radius: 25px;
 }
 
+.selfie:hover {box-shadow: 10px 10px 10px 10px rgb(210, 85, 106); }
+
 .float-left{
     float: left;
     margin: 25px;
@@ -75,26 +76,50 @@ main {
 
 .float-right {
     float: right;
-    margin: 75px;
+    margin: 50px;
     font-size: 20px;
+    text-align: center;
     padding-bottom: 50px;
 }
+
+.float-right:hover{ box-shadow: 0px 0px 10px pink;}
+
+.works img {
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+
 .content .works {
-display: block;
+ display: block;
+ padding: 20px;
+ margin: 20px;
 background-color: white;
 }
 
-.project {
+/* i want to center everything. This centers education, contact and personal but not works */
+/* div {
+    display: flex;
+    justify-content: center;
+} */
+/* makes shadow when hovered */
+.content .works img:hover { box-shadow: 0px 0px 10px black; 
+}
+
+ .project {
     width: 600px;
     height: 400px;
 }
 
 .project-infomation {
-    float: right;
-    margin: 75px;
-    font-size: 25px;
+    display: flex;
+    align-items: center;
     padding: 10px;
-}
+    margin: 10px;
+    font-size: 15px;
+    float: right;
+} 
 
 figure img {
    display: inline; 
@@ -112,44 +137,56 @@ figcaption {
     width: 600px;
 }
 
-.contact ul {
-    display: inline;
- 
+.div1 {
+    display: flex;
+    flex-direction: column;
 }
-.contact a {
-    color: black;
-    
-}
-/* section .works {
-    display:block;
-    background-color: black;
-    color: black; */
 
-.personal img {
-    max-width: 100px;
+.div2 {
+    display: flex;   
 }
 
 .education {
-    margin-bottom: 20px;
-    padding: 25px;
-    height: 300px;
-    background-color: green;
-    color: black
+    padding: 10px;
+    margin-left: 60px;
+    background-color: rgb(108, 209, 108);
+    border-radius: 20px;
+    max-width: 500px;
 }
 
-.education img {
-    float: left;
-    max-height: 100px;
-}
+.education:hover{ box-shadow: 0px 0px 10px grey;}
 
 .education strong { 
-font-size: 25px;
+font-size: 20px;
 }
 
+.education li {
+    margin-left: 20px;
+}
 
-/* Trying to get the bio to be next to the image. change the font, it looks weird. figure out how to make the image and text in a box.*/ 
+.contact {
+    padding: 10px;
+    margin-left: 100px;
+    width: 500px;
+    height: 215px;
+    background-color: rgb(108, 209, 108);
+    border-radius: 20px;
+    max-width: 100%;
 
+}
 
+.contact:hover{ box-shadow: 0px 0px 10px grey;}
+
+div .personal {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+}
+h5 {
+    font-size: 20px;
+    color: black;
+}
 @media screen and (max-width: 768px) {
     main,
     nav {
