@@ -135,13 +135,11 @@ background-color: white;
     clear: both;
     display: table;
   }
-
+/* START HERE FORMATING CAT IMAGES */
 .line {
-    display: inline;
     float: left;
     width: 33.33%;
-    padding: 10px; 
-    margin: 20px;
+    padding: 0px; 
   }
 
 .cats::after {
@@ -150,14 +148,14 @@ background-color: white;
     display: table;
   }
 
-figure img {
+/* figure img {
    display: inline; 
    width: 150px;
     height: 200px;
-    /* float: inline-start; */
-    /* padding: 10px; 
+     float: inline-start;
+    padding: 10px; 
      margin-left: 100px;
-    margin-right: 10px; 
+    margin-right: 10px; */
 
 figcaption {
     display: inline-block;
