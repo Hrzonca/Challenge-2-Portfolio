@@ -67,7 +67,7 @@ main {
     border-radius: 25px;
 }
 
-.selfie:hover {box-shadow: 10px 10px 10px 10px rgb(210, 85, 106); }
+.selfie:hover {box-shadow: 10px 10px 10px 10px rgb(236, 156, 169); }
 
 .float-left{
     float: left;
@@ -88,6 +88,7 @@ main {
 display: flex;
 flex-direction: row;
 justify-content: center;
+width: 100%;
 
 }
 
@@ -95,15 +96,9 @@ justify-content: center;
  display: block;
  padding: 20px;
  margin: 20px;
-background-color: white;
+
 }
 
-/* i want to center everything. This centers education, contact and personal but not works */
-/* div {
-    display: flex;
-    justify-content: center;
-} */
-/* makes shadow when hovered */
 .content .works img:hover { box-shadow: 0px 0px 10px black; 
 }
 
@@ -129,33 +124,13 @@ background-color: white;
     margin: 20px;
   }
   
-  /* Clearfix (clear floats) */
+  
   .row::after {
     content: "";
     clear: both;
     display: table;
   }
-/* START HERE FORMATING CAT IMAGES */
-.line {
-    float: left;
-    width: 33.33%;
-    padding: 0px; 
-  }
 
-.cats::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-/* figure img {
-   display: inline; 
-   width: 150px;
-    height: 200px;
-     float: inline-start;
-    padding: 10px; 
-     margin-left: 100px;
-    margin-right: 10px; */
 
 figcaption {
     display: inline-block;
@@ -202,23 +177,104 @@ font-size: 20px;
 
 .contact:hover{ box-shadow: 0px 0px 10px grey;}
 
-/* div .personal {
+.content .cats {
     display: flex;
-    flex-direction: row;
-    background-color: black;
-    color: white;
-} */
-
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    
+} 
+.personal p {
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
 
 h5 {
     font-size: 20px;
     color: black;
 }
-@media screen and (max-width: 768px) {
-    main,
-    nav {
-        display: flex;
+
+@media screen and (max-width: 1035px) {
+    .float-right {
+        flex-direction: column;
+        float: right;
+        font-size: 15px;
+        width: 500px;
+        height: 200px;
+    }
+} 
+
+@media screen and (max-width: 969px) {
+.works {
+    flex-direction: column;
+}
+    .education {
+    flex-direction: column;
+    width: 550px;
+    height: 220px;
+}
+
+.contact {
+    flex-direction: column;
+}
+}
+
+@media screen and (max-width: 910px) {
+    .float-right {
+        flex-direction: column;
+        float: right;
+        font-size: 15px;
+        width: 400px;
+        height: 100px;
+}
+}
+
+@media screen and (max-width: 802px) {
+    header,
+    main {
       flex-direction: column;
-      font-size: smaller;
+      background-size: 100%;
+      background-color: peachpuff;
+      padding-bottom: 60px;
+    }
+
+    .float-right {
+        flex-direction: column;
+    }
+  .contact {
+    flex-direction: column;
+    margin-left: 60px;
+    width: 425px;
+    height: 250px;
+  }
+
+    .div2 {
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .content .cats {
+     flex-direction: column;
+
+    }
+  }
+
+  @media screen and (max-width: 786px) {
+    .selfie {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .float-right {
+        flex-direction: column;
+        width: 100%;
+        background-color: peachpuff;
+        padding: 10px;
+        margin: 10px;
+        font-size: 10px;
+        
+        
     }
   }
