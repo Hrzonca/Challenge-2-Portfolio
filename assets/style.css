@@ -108,8 +108,9 @@ background-color: white;
 }
 
  .project {
-    width: 600px;
-    height: 400px;
+    display: inline;
+    width: 100%;
+    height: 20rem;
 }
 
 .project-infomation {
@@ -121,16 +122,42 @@ background-color: white;
     float: right;
 } 
 
+.column {
+    float: left;
+    width: 30rem;
+    /* padding: 10px; */
+    margin: 20px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.line {
+    display: inline;
+    float: left;
+    width: 33.33%;
+    padding: 10px; 
+    margin: 20px;
+  }
+
+.cats::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 figure img {
    display: inline; 
    width: 150px;
     height: 200px;
     /* float: inline-start; */
-    /* padding: 10px; */
+    /* padding: 10px; 
      margin-left: 100px;
     margin-right: 10px; 
-     
-}
 
 figcaption {
     display: inline-block;
@@ -177,12 +204,14 @@ font-size: 20px;
 
 .contact:hover{ box-shadow: 0px 0px 10px grey;}
 
-div .personal {
+/* div .personal {
     display: flex;
     flex-direction: row;
     background-color: black;
     color: white;
-}
+} */
+
+
 h5 {
     font-size: 20px;
     color: black;
@@ -190,6 +219,7 @@ h5 {
 @media screen and (max-width: 768px) {
     main,
     nav {
+        display: flex;
       flex-direction: column;
       font-size: smaller;
     }
