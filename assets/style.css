@@ -134,7 +134,7 @@ width: 100%;
 
 figcaption {
     display: inline-block;
-    width: 600px;
+    width: 500px;
 }
 
 .div1 {
@@ -176,6 +176,8 @@ font-size: 20px;
 }
 
 .contact:hover{ box-shadow: 0px 0px 10px grey;}
+
+.cats img:hover{box-shadow: 0px 0px 30px yellow;}
 
 .content .cats {
     display: flex;
@@ -257,6 +259,7 @@ h5 {
     }
 
     .content .cats {
+    
      flex-direction: column;
 
     }
