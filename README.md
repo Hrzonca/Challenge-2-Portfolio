@@ -11,10 +11,6 @@ Live page link
 
 https://hrzonca.github.io/Challenge-2-Portfolio/
 
-Confused
-file:///Users/haleighrzonca/bootcamp/Challenge-2-Portfolio/index.html
-
-This is what i see from my HTML. I have pushed all the changes and dont understand why its not translating over.
 
 Credits
 UW triology and Full Stack coding.
