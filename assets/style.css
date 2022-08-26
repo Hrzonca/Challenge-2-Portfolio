@@ -174,6 +174,9 @@ font-size: 20px;
 
 }
 
+.line { 
+    background-color: whitesmoke;
+}
 .contact:hover{ box-shadow: 0px 0px 10px grey;}
 h5 {
     font-size: 20px;
